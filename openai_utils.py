@@ -1,9 +1,8 @@
 import openai
-from config import OPENAI_API_KEY
-
+from config import OPENAI_API_KEY, OPENAI_MODEL
 openai.api_key = OPENAI_API_KEY
 
-def ask_openai(question, program_data, model="o4-mini"):
+def ask_openai(question, program_data, model=OPENAI_MODEL):
     # Если это dict — сериализуем для полноты данных.
     if isinstance(program_data, dict):
         import json
