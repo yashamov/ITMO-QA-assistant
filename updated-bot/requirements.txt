@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+pdfplumber
+openai
+python-telegram-bot==20.0
+python-dotenv
